@@ -1,0 +1,89 @@
+﻿﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Battle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <img class="logo" title="Reset Game" src="https://upload.wikimedia.org/wikipedia/uk/7/7a/Dota_Underlords_logo.png" alt="star butterfly">
+        </header>
+        <div class="playground">
+            <div>
+                <div class="pokemon character">
+                    <span class="lvl">Lvl. 1</span>
+
+                    
+
+                    <img src="https://cdnb.artstation.com/p/assets/images/images/016/463/491/large/roman-klimenchuk-zeus.jpg?1552274209" class="sprite">
+                    <div class="details">
+                        <h2 class="name" id="name-character">
+                            Zeus
+                        </h2>
+                        <div class="hp">
+                            <div class="bar">
+                                <div class="health" id="progressbar-character" style="width: 100%;"></div>
+                            </div>
+                            <span class="text" id="health-character">100 / 100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button" id="character-btn-kick">
+                        Jolt Lightning
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <div class="pokemon enemy">
+                    <span class="lvl">Lvl. 1</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQl3-W29JXJrwFXleDRO37IRfZ5Zm5Ostivnw&usqp=CAU" class="sprite">
+
+                    <div class="details">
+                        <h2 class="name" id="name-enemy">
+                            Phoenix
+                        </h2>
+                        <div class="hp">
+                            <div class="bar">
+                                <div class="health" id="progressbar-enemy" style="width: 100%;"></div>
+                            </div>
+                            <span class="text" id="health-enemy">100 / 100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button" id="enemy-btn-kick">
+                        Fire Ball
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="control">
+            <button  onClick="window.location.reload();" class="button">
+                Play!
+            </button>
+        </div>
+        
+    </div>
+    <div>
+        <input type="button" id="bn" onmousedown="viewDiv()">
+        <div id="div1"><b>Don't give up, start the game again!</b></div>
+    </div>
+
+  <div class="catch_screen">
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
